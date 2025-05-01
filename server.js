@@ -26,7 +26,7 @@ app.get('/', (req, res) =>{
     res.send('API Working')
 })
 
-app.get('/api/auth', authRouter)
+app.use('/api/auth', authRouter)
 
 
 
